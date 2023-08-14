@@ -149,8 +149,8 @@ d150_paid_revenue	    0.999488	2611.369983	20.562877
 d180_paid_revenue	    0.999679	1786.194831	18.078006
 d210_paid_revenue	    0.999665	1923.80993	16.601538
 d240_paid_revenue	    0.999746	1571.149208	14.540114
-d270_paid_revenue	    0.999875	807.817519	12.303678
-d300_paid_revenue	    0.99988	    806.691484	11.94127
+d270_paid_revenue	    0.999875    807.817519	12.303678
+d300_paid_revenue	    0.99988 806.691484	11.94127
 d330_paid_revenue	    0.999901	645.493969	11.105338
 d360_paid_revenue	    0.999896	697.595986	11.094529
 d14_organic_revenue	    0.997418	113.579519	4.152422
@@ -177,13 +177,25 @@ The Linerar Regression models perform exceptionally well. The scores are very cl
 
 ## V. Evaluation
 
+### D360 Revenue Prediction
+
 The predictive models were put together (as in the diagram above) to predict from D14 to D360 revenue. The results were then compared to the actual D360 Revenue. The results are shown below:
 
 
-<img src="images/readme_6.png" width="100%">
+<img src="images/readme_6_1.png" width="100%">
+<img src="images/readme_6_2.png" width="100%">
 
 $\color{red}{Conclusion}$
-The hypothesis is confirmed, early revenue indicators can be used to predict future revenue. This means that we can use the models to predict future revenue for a given cohort. This is very useful for the business since it can be used to predict future revenue and plan accordingly.
+The hypothesis is confirmed, early revenue cohorts can be used to predict future revenue. This means that we can use the models to predict future revenue for a given cohort. This is very useful for the business since it can be used to predict future revenue and plan accordingly.
+
+### Cohort Specific Analysis
+
+The models can also be used to analyze each cohort individually. This can be done by analyzing the coeficients of each model. Therore, it's important to analyze each model performance. The results are shown below:
+
+<img src="images/readme_7.png" width="100%">
+
+$\color{red}{Conclusion}$
+The "Paid Revenue" predictions are consistently good across the different cohorts. The "Organic Revenue" predictions, however, drop in accuracy around the cohort D60 impacting the D90 - D360 predictions. This is something that needs to be addressed in the future.
 
 ## VI. Next Steps & Recommendations
 
