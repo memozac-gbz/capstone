@@ -131,7 +131,7 @@ Even though each model will be using different revenue features, all will share 
 - month
 - year
 
-Additionally, the models will be separated into two groups: paid and organic. This means that we will have a total of 26 models (13 time periods x 2 groups).
+Additionally, the models will be separated into two groups: paid revenue and organic revenue (paid revenue behaves different to organic revenue). This means that we will have a total of 26 models (13 time periods x 2 groups).
 
 Just some of the data will be used to train the model. A portion of the data (30% of the records) was saved for testing purposes to measure the accuracy of the models. 
 
