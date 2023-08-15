@@ -98,6 +98,9 @@ Features:
 - ...
 - **d360_paid_revenue**: revenue generated in the first `360 days` after users installed the app on a given date.
 
+*This new dataset has data only for "App T (android)" since the apps behave differently from each other (individual models for each sku need to be generated). Having said that, all the channels and regions for this specific app will be used for modeling.*
+
+
 ### Analyzing new data structure
 
 <img src="images/readme_4.png" width="100%">
