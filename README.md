@@ -8,9 +8,9 @@ In the mobile applications industry, marketing (better known as User Acquisition
 
 <img src="images/summary.png" width="100%">
 
-**Disclaimer**
+<br>
 
-This is a summary of my analysis, findings, and recommendations. The full analysis can be found [here](prompt.ipynb).
+*Disclaimer*: *This is a summary of my analysis, findings, and recommendations. The full analysis can be found [here](prompt.ipynb).*
 
 ### Business Understanding
 
@@ -79,7 +79,8 @@ This initial analysis didn't generate insights or interesting findings. It was j
 
 ## II. Feature Engineering
 
-After talking to subject-matter experts, a few important determinations were made: The data will be "easier to analyze" if it's structured in a "cohorted" way. This means:
+After doing some research and talking to subject-matter experts, I identified that a [cohort analysis](https://www.applovin.com/glossary/cohort-analysis/#:~:text=Cohort%20analysis%20lets%20you%20view,or%20the%20chosen%20common%20identifier.) could simplify immensely the dataset and increase the predictability of the model by keeping only the features that really matter when analyzing revenue trends in mobile gaming. This means:
+
 - look at aggregated KPIs by date, using the `days_after_install` diimension to create different KPI buckets.
 - each bucket helps to understand how user retention affects performance over time (revenue, mainly)
 - other dimensions like network, region, sku can be part of the high level aggregation (which is a common practice).
@@ -187,6 +188,8 @@ The predictive models were put together (as in the diagram above) to predict fro
 <img src="images/readme_6_1.png" width="100%">
 <img src="images/readme_6_2.png" width="100%">
 
+<br>
+
 $\color{red}{Conclusion}$
 The hypothesis is confirmed, early revenue cohorts can be used to predict future revenue. This means that we can use the models to predict future revenue for a given cohort. This is very useful for the business since it can be used to predict future revenue and plan accordingly.
 
@@ -195,6 +198,8 @@ The hypothesis is confirmed, early revenue cohorts can be used to predict future
 The models can also be used to analyze each cohort individually. This can be done by analyzing the coeficients of each model. Therore, it's important to analyze each model performance. The results are shown below:
 
 <img src="images/readme_7.png" width="100%">
+
+<br>
 
 $\color{red}{Conclusion}$
 The "Paid Revenue" predictions are consistently good across the different cohorts. The "Organic Revenue" predictions, however, drop in accuracy around the cohort D60 impacting the D90 - D360 predictions. This is something that needs to be addressed in the future.
