@@ -79,7 +79,7 @@ This initial analysis didn't generate insights or interesting findings. It was j
 
 ## II. Feature Engineering
 
-After doing some research and talking to subject-matter experts, I identified that a [cohort analysis](https://www.applovin.com/glossary/cohort-analysis/#:~:text=Cohort%20analysis%20lets%20you%20view,or%20the%20chosen%20common%20identifier.){:target="_blank"} could simplify immensely the dataset and increase the predictability of the model by keeping only the features that really matter when analyzing revenue trends in mobile gaming. This means:
+After doing some research and talking to subject-matter experts, I identified that a [cohort analysis](https://www.applovin.com/glossary/cohort-analysis/#:~:text=Cohort%20analysis%20lets%20you%20view,or%20the%20chosen%20common%20identifier. "Cohort Analysis"){:target="_blank"} could simplify immensely the dataset and increase the predictability of the model by keeping only the features that really matter when analyzing revenue trends in mobile gaming. This means:
 
 - look at aggregated KPIs by date, using the `days_after_install` diimension to create different KPI buckets.
 - each bucket helps to understand how user retention affects performance over time (revenue, mainly)
